@@ -3,7 +3,7 @@
     "name": "favPlaceApp",
     "slug": "favPlaceApp",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "defualt",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
@@ -23,6 +23,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "The app accesses your camera to take photos of your favorite places."
+        }
+      ],
+      "expo-sqlite"
+    ]
   }
 }
